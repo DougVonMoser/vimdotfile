@@ -1,13 +1,17 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
-Plug 'elmcast/elm-vim'
+Plug 'w0rp/ale'
 Plug 'Valloric/YouCompleteMe'
 Plug 'Shougo/neocomplete.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'w0rp/ale'
 Plug 'ctrlpvim/ctrlp.vim'
+
+Plug 'elmcast/elm-vim'
+
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 
 
 " Initialize plugin system
@@ -45,6 +49,8 @@ set backspace=indent,eol,start
 
 set shell=/bin/zsh
 set cursorline
+set number " line numbers
+set nowrap " no line wrapping
 
 let g:airline#extensions#ale#enabled = 1
 
