@@ -5,9 +5,8 @@ Plug 'w0rp/ale'
 Plug 'Valloric/YouCompleteMe'
 Plug 'Shougo/neocomplete.vim'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim'
-
+Plug 'altercation/vim-colors-solarized'
 Plug 'elmcast/elm-vim'
 
 Plug 'pangloss/vim-javascript'
@@ -59,3 +58,16 @@ let g:ale_linters = {'javascript': ['eslint'], 'jsx': ['eslint']}
 
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 let g:ctrlp_show_hidden = 1
+
+set background=light
+colorscheme solarized
+
+map <C-L> 10zl " Scroll 20 characters to the right
+map <C-H> 10zh " Scroll 20 characters to the left
+
+let NERDTreeIgnore = ['\.pyc$', '\.DS_Store']
+
+map <Leader>q :NERDTreeToggle<CR>
+map <Leader>1 :NERDTreeFind<CR>
+
+let g:ale_sign_column_always = 1
